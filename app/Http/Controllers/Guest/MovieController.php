@@ -25,4 +25,15 @@ class MovieController extends Controller {
 
         return view("movies.index", compact("movies"));
     }
+
+    public function show($id) {
+
+        // Recupera il singolo elemento di questo tipo di dato
+        // Movie::where('id', $id)->first() -> sulla tabella che si chiama movies, esegui la query:
+        // SELECT * FROM movies WHERE id = $id
+
+        $movie = Movie::where('id', $id)->first();
+
+        return view('movies.show', compact('movie'));
+    }
 }

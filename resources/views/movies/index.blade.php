@@ -19,7 +19,9 @@
                         {{ $movie->title }}
                     </h3>
 
-                    
+                    <a href="{{ route('movies.show', ['id' => $movie->id]) }}" class="btn btn-primary">
+                        Vai al film
+                    </a>
 
                 </div>
             </div>
