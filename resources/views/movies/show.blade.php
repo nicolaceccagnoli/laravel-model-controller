@@ -8,31 +8,31 @@
         {{ $movie->title }}
     </h1>
 
-    <div class="row">
-        <div class="col-12">
-            <div class="card">
-                <div class="card-body">
+    <div class="row justify-content-center">
+        <div class="col-auto">
+            <div class="card card-movie">
+                <div class="card-body text-center d-flex flex-column justify-content-center">
                     <h3>
                         {{ $movie->title }}
                     </h3>
 
-                    <div>
+                    <div class="mt-3">
                         Titolo Originale:
-                        <span>
+                        <span class="ps-2">
                             {{ $movie->original_title }}
                         </span>
                     </div>
 
-                    <div>
+                    <div class="mt-3">
                         Lingua Originale:
-                        <span>
+                        <span class="ps-2">
                             {{ $movie->nationality }}
                         </span>
                     </div>
 
-                    <div>
+                    <div class="mt-3">
                         Valutazione Media:
-                        <span>
+                        <span class="ps-2">
                             {{ $movie->vote }}
                         </span>
                     </div>

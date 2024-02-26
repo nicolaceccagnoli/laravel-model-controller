@@ -19,10 +19,10 @@
 @endphp
 
 <header>
-    <nav>
-        <ul>
+    <nav class="h-100">
+        <ul class="d-flex align-items-center justify-content-around h-100 p-0 m-0">
             @foreach ($links as $link)
-                <li>
+                <li class="list-unstyled">
                     <a href="{{ $link['url'] }}">
                         {{ $link['label'] }}
                     </a>
