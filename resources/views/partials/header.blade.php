@@ -9,6 +9,11 @@
             'url' => '/about',
             'label' => 'Chi siamo',
             'active' => true,
+        ],
+        [
+            'url' => '/movies',
+            'label' => 'Movies',
+            'active' => true,
         ]
     ];
 @endphp

@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
+// Controllers 
+use App\Http\Controllers\Guest\PageController;
+use App\Http\Controllers\Guest\MovieController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,13 +17,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', [PageController::class, 'index'])->name('home');
 
-    $title = 'Laravel Model Controller';
 
-    return view('welcome', ['title'=> $title]);
-});
+Route::get('/about', [PageController::class, 'about'])->name('chi-siamo');
 
-Route::get('/about', function () {
-    return view('subpages.about');
-});
+Route::get('/movies', [MovieController::class, 'index'])->name('movies.index');
