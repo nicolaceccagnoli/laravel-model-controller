@@ -25,14 +25,6 @@
                 <div class="row">
 
                     <div class="col">
-
-                        <div>
-                            <img class="spiderman-img" src="{{ Vite::asset('resources/img/spiderman2099.webp') }}" alt="Spiderman 2099">
-                        </div>
-            
-                        <div class="spiderman-bg">
-                            QUESTO DIV AVRA' COME SFONDO SPIDERMAN 2099
-                        </div>
             
                         @yield('main-content')            
 
